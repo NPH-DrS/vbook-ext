@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "Manwa210",
+    "author": "DrS",
+    "version": 1,
+    "source": "https://manhwa210.com",
+    "regexp": "https://manhwa210.com/.+",
+    "description": "",
+    "local": "en-EN",
+    "tag": "nsfw",
+    "type": "comic",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

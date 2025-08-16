@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "author": "DrS",
+    "description": ""
+  },
+  "data": [
+    {
+      "name": "Buondua",
+      "author": "DrS",
+      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/buondua/plugin.zip",
+      "version": 1,
+      "source": "https://buondua.com/",
+      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/buondua/icon.png",
+      "description": "Tập Hợp Album của Xiuren...",
+      "locale": "vi_VN",
+      "tag": "nsfw",
+      "type": "comic"
+    },
+    {
+      "name": "Cosplaytele",
+      "author": "DrS",
+      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/cosplaytele/plugin.zip",
+      "version": 1,
+      "source": "https://cosplaytele.com/",
+      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/cosplaytele/icon.png",
+      "description": "Album & Video Cosplay",
+      "locale": "vi_VN",
+      "tag": "nsfw",
+      "type": "comic"
+    },
+    {
+      "name": "Vlogtruyen",
+      "author": "DrS",
+      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vlogtruyen/plugin.zip",
+      "version": 1,
+      "source": "https://vlogtruyen.com",
+      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vlogtruyen/icon.png",
+      "description": "Xem truyện tại Vlogtruyen",
+      "locale": "vi_VN",
+      "type": "comic"
+    },
+    {
+      "name": "Vi-Hentai",
+      "author": "DrS",
+      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vi-hentai/plugin.zip",
+      "version": 1,
+      "source": "https://vi-hentai.moe/",
+      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/vi-hentai/icon.png",
+      "description": "Xem truyện tại Vi-Hentai",
+      "locale": "vi_VN",
+      "type": "comic"
+    },
+    {
+      "name": "Manwa210",
+      "author": "DrS",
+      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/manwa210/plugin.zip",
+      "version": 1,
+      "source": "https://manwa210.com/",
+      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/manwa210/icon.png",
+      "description": "",
+      "locale": "en_EN",
+      "type": "comic"
+    }
+  ]
+}

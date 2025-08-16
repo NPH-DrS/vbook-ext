@@ -1,0 +1,22 @@
+{
+    "metadata": {
+        "name": "CosplayTele",
+        "author": "DrS",
+        "version": 1,
+        "source": "https://cosplaytele.com/",
+        "regexp": "https://cosplaytele.com/.+",
+        "description": "Album & Video Cosplay",
+        "locale": "vi_VN",
+        "tag": "nsfw",
+        "type": "comic",
+        "language": "javascript"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "detail": "detail.js",
+        "toc": "toc.js",
+        "search": "search.js",
+        "chap": "chap.js"
+    }
+}
