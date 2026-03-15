@@ -1,1 +1,1 @@
-const BASE_URL = 'https://vi-hentai.moe';
+const BASE_URL = 'https://vi-hentai.com';
