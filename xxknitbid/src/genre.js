@@ -1,14 +1,21 @@
+load('config.js');
 function execute() {
-    return Response.success([
-        {title: "Người đẹp sexy", input: "type/1/", script: "gen.js"},
-        {title: "Người đẹp thuần khiết", input: "type/2/", script: "gen.js"},
-        {title: "Gái đẹp Vớ chân", input: "type/3/", script: "gen.js"},
-        {title: "Chân đẹp", input: "type/4/", script: "gen.js"},
-        {title: "Ngực đẹp", input: "type/5/", script: "gen.js"},
-        {title: "Cosplay", input: "type/6/", script: "gen.js"},
-        {title: "Đồng phục quyến rũ", input: "type/7/", script: "gen.js"},
-        {title: "Người đẹp internet", input: "type/8/", script: "gen.js"},
-        {title: "Phụ Nữ Đẹp Lớn", input: "type/9/", script: "gen.js"},
-        {title: "AI đẹp", input: "type/10/", script: "gen.js"},
-    ]);
+    let data = [];
+
+    let response = fetch(BASE_URL + "en/tag/");
+    if (response.ok) {
+        let doc = response.html();
+        doc.select("div.tagslist ul li a.name").forEach(e => {
+            let title = e.text().trim();
+            title = title.replace(/\w\S*/g, w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase());
+            data.push({
+                title: title,
+                input: e.attr("href").replace(/^\//, ""),
+                script: "gen.js"
+            });
+        });
+        data.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    return Response.success(data);
 }

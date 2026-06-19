@@ -11,7 +11,7 @@ function execute(url) {
     doc.select(".article-tags a").forEach(e => {
         genres.push({
             title: e.text(),
-            input: e.attr("href").replace("/vi/", ""),
+            input: e.attr("href").replace(/^\//, ""),
             script: "gen.js"
         });
     });

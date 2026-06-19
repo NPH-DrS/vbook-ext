@@ -1,9 +1,9 @@
 load('config.js');
 function execute(key, page) {
     if (!page) page = "1";
-    let url = BASE_URL + "search/?s=" + key;
+    let url = BASE_URL + "en/search/?s=" + key;
     if (page != "1") {
-        url = BASE_URL + "search/page/" + page + "/?s=" + key;
+        url = BASE_URL + "en/search/page/" + page + "/?s=" + key;
     }
     let response = fetch(url);
     if (response.ok) {

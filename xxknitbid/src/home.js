@@ -1,11 +1,11 @@
 function execute() {
     return Response.success([
-        {title: "Trang chủ", input: "", script: "gen.js"},
-        {title: "Mới nhất", input: "sort/new/", script: "gen.js"},
-        {title: "Phổ biến", input: "sort/hot/", script: "gen.js"},
-        {title: "Hôm nay nóng", input: "rankings/daily/", script: "gen.js"},
-        {title: "3 ngày nóng", input: "rankings/3days/", script: "gen.js"},
-        {title: "Tuần nóng", input: "rankings/weekly/", script: "gen.js"},
-        {title: "Tháng nóng", input: "rankings/monthly/", script: "gen.js"},
+        {title: "Home", input: "en/", script: "gen.js"},
+        {title: "Latest", input: "en/sort/new/", script: "gen.js"},
+        {title: "Monthly (EN)", input: "en/rankings/monthly/", script: "gen.js"},
+        {title: "Monthly (VI)", input: "vi/rankings/monthly/", script: "gen.js"},
+        {title: "Monthly (JA)", input: "ja/rankings/monthly/", script: "gen.js"},
+        {title: "Monthly (KO)", input: "ko/rankings/monthly/", script: "gen.js"},
+        {title: "Monthly (CN)", input: "rankings/monthly/", script: "gen.js"},
     ]);
 }

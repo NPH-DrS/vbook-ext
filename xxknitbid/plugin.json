@@ -6,7 +6,7 @@
         "source": "https://xx.knit.bid/",
         "regexp": "https://xx.knit.bid/.+",
         "description": "Album ảnh Cosplay & Người đẹp",
-        "locale": "vi_VN",
+        "locale": "en_ES",
         "tag": "nsfw",
         "type": "comic",
         "language": "javascript"

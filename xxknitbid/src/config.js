@@ -1,1 +1,1 @@
-const BASE_URL = 'https://xx.knit.bid/vi/';
+const BASE_URL = 'https://xx.knit.bid/';
