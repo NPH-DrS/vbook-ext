@@ -18,7 +18,9 @@ function execute(key, page) {
                 host: BASE_URL
             })
         });
-        return Response.success(data);
+
+        let next = (parseInt(page) + 1).toString();
+        return Response.success(data, next);
     }
     return null;
 }
