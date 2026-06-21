@@ -1,4 +1,5 @@
 load('config.js');
+load('filter.js');
 function execute(url) {
     let coverUrl = "";
     if (url.includes("?cover=")) {
@@ -6,6 +7,7 @@ function execute(url) {
         url = parts[0];
         coverUrl = decodeURIComponent(parts[1]);
     }
+
     let doc = fetch(url).html();
     let genres = [];
     doc.select(".article-tags a").forEach(e => {
@@ -15,6 +17,7 @@ function execute(url) {
             script: "gen.js"
         });
     });
+
     return Response.success({
         name: doc.select("h1.focusbox-title").text(),
         cover: coverUrl || doc.select("meta[property='og:image']").attr("content"),

@@ -1,3 +1,4 @@
+load('config.js');
 function execute(url) {
     let data = [];
 
@@ -19,7 +20,7 @@ function execute(url) {
                     htmlDoc.select(".item-image img").forEach(img => {
                         let src = img.attr("data-src");
                         if (src) {
-                            if (src.startsWith("/")) src = "https://xx.knit.bid" + src;
+                            if (src.startsWith("/")) src = BASE_URL + src;
                             imgs.push(src + "?format=jpeg");
                         }
                     });
@@ -51,7 +52,7 @@ function execute(url) {
             doc.select(".item-image img").forEach(img => {
                 let src = img.attr("data-src");
                 if (src) {
-                    if (src.startsWith("/")) src = "https://xx.knit.bid" + src;
+                    if (src.startsWith("/")) src = BASE_URL + src;
                     imgs.push(src + "?format=jpeg");
                 }
             });
