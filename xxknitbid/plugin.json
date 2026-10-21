@@ -2,7 +2,7 @@
     "metadata": {
         "name": "Knit",
         "author": "DrS",
-        "version": 2,
+        "version": 3,
         "source": "https://xx.knit.bid/",
         "regexp": "https://xx.knit.bid/.+",
         "description": "Album ảnh Cosplay & Người đẹp",
