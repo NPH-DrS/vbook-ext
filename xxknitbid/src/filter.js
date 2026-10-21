@@ -1,9 +1,7 @@
 const FILTER_KEYWORDS = [
-    "AI Generated",
-    "AI Beauty",
-    "AI Porn",
-    "AI Chinese",
-    "Anime Fanart",
+    " AI ",
+    "AI ",
+    "AI-",
 ];
 
 function isFiltered(name) {
