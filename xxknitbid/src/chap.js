@@ -34,41 +34,16 @@ function collectJsonLd(doc) {
 }
 
 function execute(url) {
-    let data = [];
-
     if (url.indexOf("?cover=") >= 0) url = url.split("?cover=")[0];
 
-    let baseUrl = url.replace(/\/+$/, "");
-    let pageUrl = baseUrl + "/";
-    let page = 1;
-    let guard = 0;
+    let response = fetch(url);
+    if (!response || !response.ok) return Response.success([]);
 
-    while (pageUrl && guard < 200) {
-        guard++;
+    let doc = response.html();
+    if (!doc) return Response.success([]);
 
-        let response = fetch(pageUrl);
-        if (!response || !response.ok) break;
-        let doc = response.html();
-        if (!doc) break;
+    let imgs = collectHtml(doc);
+    if (imgs.length === 0) imgs = collectJsonLd(doc);
 
-        let imgs = collectHtml(doc);
-        if (imgs.length === 0) imgs = collectJsonLd(doc);
-        if (imgs.length === 0) break;
-
-        data = data.concat(imgs);
-
-        let nextUrl = doc.select("link[rel='next']").attr("href");
-        if (!nextUrl) {
-            let nextPage = doc.select(".pagination .next-page a").attr("data-page");
-            if (nextPage && Number(nextPage) > page) {
-                nextUrl = baseUrl + "/page/" + nextPage + "/";
-            }
-        }
-        if (!nextUrl) break;
-
-        page++;
-        pageUrl = nextUrl;
-    }
-
-    return Response.success(data);
+    return Response.success(imgs);
 }
