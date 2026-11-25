@@ -1,0 +1,22 @@
+{
+    "metadata": {
+        "name": "TruyenQQ",
+        "author": "vbook-ext",
+        "version": 1,
+        "source": "https://truyenqq.com.vn/",
+        "regexp": "https://truyenqq.com.vn/.+",
+        "description": "Đọc truyện tranh Manhwa, Manga, Manhua không quảng cáo tại TruyenQQ",
+        "locale": "vi_VN",
+        "tag": "",
+        "type": "comic",
+        "language": "javascript"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "detail": "detail.js",
+        "search": "search.js",
+        "toc": "toc.js",
+        "chap": "chap.js"
+    }
+}

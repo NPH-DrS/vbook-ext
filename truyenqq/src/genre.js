@@ -1,0 +1,32 @@
+load('config.js');
+function execute() {
+    return Response.success([
+        {title: "Ngôn Tình", input: BASE_URL + "/the-loai/ngon-tinh", script: "gen.js"},
+        {title: "Huyền Huyễn", input: BASE_URL + "/the-loai/huyen-huyen", script: "gen.js"},
+        {title: "Xuyên Không", input: BASE_URL + "/the-loai/xuyen-khong", script: "gen.js"},
+        {title: "Trọng Sinh", input: BASE_URL + "/the-loai/trong-sinh", script: "gen.js"},
+        {title: "Trinh Thám", input: BASE_URL + "/the-loai/trinh-tham", script: "gen.js"},
+        {title: "Cổ Đại", input: BASE_URL + "/the-loai/co-dai", script: "gen.js"},
+        {title: "Manhwa", input: BASE_URL + "/the-loai/manhwa", script: "gen.js"},
+        {title: "Manhua", input: BASE_URL + "/the-loai/manhua", script: "gen.js"},
+        {title: "Manga", input: BASE_URL + "/the-loai/manga", script: "gen.js"},
+        {title: "Webtoon", input: BASE_URL + "/the-loai/webtoon", script: "gen.js"},
+        {title: "Fantasy", input: BASE_URL + "/the-loai/fantasy", script: "gen.js"},
+        {title: "Isekai", input: BASE_URL + "/the-loai/isekai", script: "gen.js"},
+        {title: "Action", input: BASE_URL + "/the-loai/action", script: "gen.js"},
+        {title: "Adventure", input: BASE_URL + "/the-loai/adventure", script: "gen.js"},
+        {title: "Comedy", input: BASE_URL + "/the-loai/comedy", script: "gen.js"},
+        {title: "Drama", input: BASE_URL + "/the-loai/drama", script: "gen.js"},
+        {title: "Harem", input: BASE_URL + "/the-loai/harem", script: "gen.js"},
+        {title: "Romance", input: BASE_URL + "/the-loai/romance", script: "gen.js"},
+        {title: "School Life", input: BASE_URL + "/the-loai/school-life", script: "gen.js"},
+        {title: "Sci-fi", input: BASE_URL + "/the-loai/sci-fi", script: "gen.js"},
+        {title: "Seinen", input: BASE_URL + "/the-loai/seinen", script: "gen.js"},
+        {title: "Shoujo", input: BASE_URL + "/the-loai/shoujo", script: "gen.js"},
+        {title: "Shounen", input: BASE_URL + "/the-loai/shounen", script: "gen.js"},
+        {title: "Slice of Life", input: BASE_URL + "/the-loai/slice-of-life", script: "gen.js"},
+        {title: "Supernatural", input: BASE_URL + "/the-loai/supernatural", script: "gen.js"},
+        {title: "Tragedy", input: BASE_URL + "/the-loai/tragedy", script: "gen.js"},
+        {title: "Khác", input: BASE_URL + "/the-loai/khac", script: "gen.js"},
+    ]);
+}

@@ -61,6 +61,18 @@
       "locale": "vi_VN",
       "tag": "nsfw",
       "type": "comic"
+    },
+    {
+      "name": "TruyenQQ",
+      "author": "vbook-ext",
+      "path": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/truyenqq/plugin.zip",
+      "version": 1,
+      "source": "https://truyenqq.com.vn/",
+      "icon": "https://raw.githubusercontent.com/NPH-DrS/vbook-ext/main/truyenqq/icon.png",
+      "description": "Đọc truyện tranh Manhwa, Manga, Manhua không quảng cáo tại TruyenQQ",
+      "locale": "vi_VN",
+      "tag": "",
+      "type": "comic"
     }
   ]
 }
